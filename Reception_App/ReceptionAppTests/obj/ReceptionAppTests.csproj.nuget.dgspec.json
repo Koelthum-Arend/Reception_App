@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\koelt\\OneDrive\\Documents\\GitHub\\Reception_App\\Reception_App\\ReceptionAppTests\\ReceptionAppTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\koelt\\OneDrive\\Documents\\GitHub\\Reception_App\\Reception_App\\ReceptionAppTests\\ReceptionAppTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koelt\\OneDrive\\Documents\\GitHub\\Reception_App\\Reception_App\\ReceptionAppTests\\ReceptionAppTests.csproj",
+        "projectName": "ReceptionAppTests",
+        "projectPath": "C:\\Users\\koelt\\OneDrive\\Documents\\GitHub\\Reception_App\\Reception_App\\ReceptionAppTests\\ReceptionAppTests.csproj",
+        "packagesPath": "C:\\Users\\koelt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koelt\\OneDrive\\Documents\\GitHub\\Reception_App\\Reception_App\\ReceptionAppTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\koelt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\koelt\\OneDrive\\Documents\\GitHub\\Reception_App\\Reception_App\\Reception_App\\Reception_App.csproj": {
+                "projectPath": "C:\\Users\\koelt\\OneDrive\\Documents\\GitHub\\Reception_App\\Reception_App\\Reception_App\\Reception_App.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koelt\\OneDrive\\Documents\\GitHub\\Reception_App\\Reception_App\\Reception_App\\Reception_App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koelt\\OneDrive\\Documents\\GitHub\\Reception_App\\Reception_App\\Reception_App\\Reception_App.csproj",
+        "projectName": "Reception_App",
+        "projectPath": "C:\\Users\\koelt\\OneDrive\\Documents\\GitHub\\Reception_App\\Reception_App\\Reception_App\\Reception_App.csproj",
+        "packagesPath": "C:\\Users\\koelt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koelt\\OneDrive\\Documents\\GitHub\\Reception_App\\Reception_App\\Reception_App\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\koelt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

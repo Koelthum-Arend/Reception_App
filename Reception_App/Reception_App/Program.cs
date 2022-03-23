@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Reception_App.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,9 @@ namespace Reception_App
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+
+            Person p = new Person("Koel", "WTC", "Student", "karend@student.wethinkcode.co.za", "0849779380" );
+            Console.WriteLine(p.ToString());
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
