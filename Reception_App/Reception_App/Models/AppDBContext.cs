@@ -19,5 +19,23 @@ namespace Reception_App.Models
         public DbSet<Meeting> Meetings { get; set; }
         public DbSet<StaffMemberAttendance> StaffMeetingAttendance { get; set; }
         public DbSet<VisitorAttendance> VisitorMeetingAttendance { get; set; }
+
+        //seed data
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<StaffMember>().HasData(
+
+                new StaffMember
+                {
+                Name = "Koel",
+                Company = "Company",
+                Role = "Role",
+                Email = "Email",
+                ContactNumber = "0849779380"
+        }
+              );
+        }
     }
+
+   
 }

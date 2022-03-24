@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Reception_App.Models
 {
-    public class StaffMember : IPerson
+    public class StaffMember 
     {
 
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -15,7 +15,7 @@ namespace Reception_App.Models
 
         [Required(ErrorMessage = "Name is required")]
         public string Name { get; set; }
-
+        
         [Required(ErrorMessage = "Company is required")]
         public string Company { get; set; }
 
@@ -28,6 +28,7 @@ namespace Reception_App.Models
         [Required(ErrorMessage = "Contact cannot be longer than 10 digits"), StringLength(10)]
         public string ContactNumber { get; set; }
 
+        public StaffMember() { }
         public StaffMember(string Name, string Company, string Role, string Email, string ContactNumber)
         {
             this.Name = Name;
