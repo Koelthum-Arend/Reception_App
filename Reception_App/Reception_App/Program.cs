@@ -16,7 +16,7 @@ namespace Reception_App
         {
             CreateHostBuilder(args).Build().Run();
 
-            Person p = new Person("Koel", "WTC", "Student", "karend@student.wethinkcode.co.za", "0849779380" );
+            Visitor p = new Visitor("Koel", "WTC", "Student", "karend@student.wethinkcode.co.za", "0849779380" );
             Console.WriteLine(p.ToString());
         }
 

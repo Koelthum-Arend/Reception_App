@@ -9,7 +9,7 @@ namespace ReceptionAppTests
         [Fact]
         public void ToString_AllRequireParams_PersonInfo()
         {
-            Person person = new Person("Koel", "WTC", "Student", "karend@student.wethinkcode.co.za", "0849779380");
+            Visitor person = new Visitor("Koel", "WTC", "Student", "karend@student.wethinkcode.co.za", "0849779380");
             String p = person.ToString();
 
             Assert.Equal(
