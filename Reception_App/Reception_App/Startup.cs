@@ -1,10 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using Reception_App.Models;
 
 namespace Reception_App
 {
@@ -21,9 +22,12 @@ namespace Reception_App
         public void ConfigureServices(IServiceCollection services)
         {
             //adding SQL service
-            services.AddDbContextPool
+            services.AddDbContextPool<AppDBContext>(
+                options => options.UseSqlServer(Configuration.GetConnectionString("ReceptionAppDBConnection")));
 
             services.AddControllersWithViews();
+            services.AddTransient<IRepository, SQLReceptionAppRepository>();
+
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {

@@ -131,6 +131,14 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [

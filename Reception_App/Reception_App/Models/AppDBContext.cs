@@ -13,10 +13,11 @@ namespace Reception_App.Models
         {
 
         }
-        public  DbSet<Visitor> Staff { get; set; }
+
+        public  DbSet<StaffMember> Staff { get; set; }
         public DbSet<Visitor> Visitors { get; set; }
-
-
-        //    public virtual DbSet<TheCodeBuzzDb> TheCodeBuzzDb { get; set; }
+        public DbSet<Meeting> Meetings { get; set; }
+        public DbSet<StaffMemberAttendance> StaffMeetingAttendance { get; set; }
+        public DbSet<VisitorAttendance> VisitorMeetingAttendance { get; set; }
     }
 }
