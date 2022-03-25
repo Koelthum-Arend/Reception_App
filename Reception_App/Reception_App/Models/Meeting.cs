@@ -12,16 +12,16 @@ namespace Reception_App.Models
         public Guid MeetingID { get; set; }
 
         [Required(ErrorMessage = "Date is required")]
-        String Date { get; set; }
+        public string Date { get; set; }
 
         [Required(ErrorMessage = "Description is required")]
-        string Description { get; set; }
+        public string Description { get; set; }
 
         public Meeting()
         {
 
         }
-        public Meeting(String date, string descsription) {
+        public Meeting(string date, string descsription) {
             this.MeetingID = Guid.NewGuid();
             this.Date = date;
             this.Description = descsription;
