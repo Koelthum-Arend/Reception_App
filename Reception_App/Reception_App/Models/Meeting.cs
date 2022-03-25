@@ -9,20 +9,20 @@ namespace Reception_App.Models
     public class Meeting
     {
         [Key]
-        Guid MeetingID { get; set; }
+        public Guid MeetingID { get; set; }
 
         [Required(ErrorMessage = "Date is required")]
-        [DataType(DataType.Date)]
-        DateTime Date { get; set; }
+        [DataType(DataType.DateTime)]
+        DateTime DateTime { get; set; }
 
-        [Required(ErrorMessage = "Time is required")]
-        [DataType(DataType.Time)]
-        DateTime Time { get; set; }
+        [Required(ErrorMessage = "Description is required")]
+        [DataType(DataType.Text)]
+        string Description { get; set; }
 
-        public Meeting(DateTime date, DateTime time) {
+        public Meeting(DateTime date, string descsription) {
             this.MeetingID = Guid.NewGuid();
-            this.Date = date;
-            this.Time = time;
+            this.DateTime = date;
+            this.Description = descsription;
          }
 
 

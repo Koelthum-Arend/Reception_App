@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Reception_App.Models
 {
-    public class StaffMember 
+    public class StaffMember : IPerson
     {
 
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]

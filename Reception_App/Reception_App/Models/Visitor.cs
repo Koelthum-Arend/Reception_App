@@ -27,6 +27,11 @@ namespace Reception_App.Models
         [Required(ErrorMessage = "Contact cannot be longer than 10 digits"), StringLength(10)]
         public string ContactNumber { get; set; }
 
+        public Visitor()
+        {
+
+        }
+
         public Visitor(string Name, string Company, string Role, string Email, string ContactNumber) {
             this.Name = Name;
             this.Company = Company;

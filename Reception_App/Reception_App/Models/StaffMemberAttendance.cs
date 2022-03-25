@@ -17,5 +17,17 @@ namespace Reception_App.Models
 
         [ForeignKey("Meeting")]
         public Guid MeetingID { get; set; }
+
+
+        public StaffMemberAttendance() 
+        {
+
+        }
+
+        public StaffMemberAttendance(int staffID, Guid meetingID)
+        {
+            this.AttendeeID = staffID;
+            this.MeetingID = meetingID;
+        }
     }
 }
