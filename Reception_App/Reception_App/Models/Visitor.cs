@@ -9,7 +9,7 @@ namespace Reception_App.Models
 {
     public class Visitor : IPerson
     {
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
         public int ID { get; set; }
 
         [Required(ErrorMessage = "Name is required")]

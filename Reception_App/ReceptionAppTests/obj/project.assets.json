@@ -2510,7 +2510,6 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.AspNetCore.SpaServices.Extensions": "5.0.13",
-          "Microsoft.EntityFrameworkCore": "5.0.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.15",
           "Microsoft.Extensions.DependencyInjection": "5.0.2"
         },

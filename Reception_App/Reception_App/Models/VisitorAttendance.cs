@@ -9,7 +9,7 @@ namespace Reception_App.Models
 {
     public class VisitorAttendance : IMeetingAttendance
     {
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
         public int ID { get; set; }
 
         [ForeignKey("Visitor")]
