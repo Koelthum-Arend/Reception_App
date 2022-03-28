@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Reception_App.Models;
 
-namespace Reception_App.Migrations
+namespace ReceptionApp_2._0.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20220325152954_seedData")]
-    partial class seedData
+    [Migration("20220328184409_seed-data")]
+    partial class seeddata
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -42,13 +42,13 @@ namespace Reception_App.Migrations
                     b.HasData(
                         new
                         {
-                            MeetingID = new Guid("e540ed06-761f-4d5f-9be8-a85d7a47220c"),
+                            MeetingID = new Guid("6ef41f9d-e936-45c4-827e-abedbea8dbbc"),
                             Date = "2022-12-01",
                             Description = "Investment"
                         },
                         new
                         {
-                            MeetingID = new Guid("2ac44f20-d5a3-4689-8f04-70f692283c34"),
+                            MeetingID = new Guid("7385d280-7ec8-4b66-9ac8-0dedc96c8658"),
                             Date = "2022-12-02",
                             Description = "Visit"
                         });
@@ -156,19 +156,19 @@ namespace Reception_App.Migrations
                         {
                             ID = 1,
                             AttendeeID = 1,
-                            MeetingID = new Guid("e540ed06-761f-4d5f-9be8-a85d7a47220c")
+                            MeetingID = new Guid("6ef41f9d-e936-45c4-827e-abedbea8dbbc")
                         },
                         new
                         {
                             ID = 2,
                             AttendeeID = 2,
-                            MeetingID = new Guid("e540ed06-761f-4d5f-9be8-a85d7a47220c")
+                            MeetingID = new Guid("6ef41f9d-e936-45c4-827e-abedbea8dbbc")
                         },
                         new
                         {
                             ID = 3,
                             AttendeeID = 1,
-                            MeetingID = new Guid("2ac44f20-d5a3-4689-8f04-70f692283c34")
+                            MeetingID = new Guid("7385d280-7ec8-4b66-9ac8-0dedc96c8658")
                         });
                 });
 
@@ -256,13 +256,13 @@ namespace Reception_App.Migrations
                         {
                             ID = 1,
                             AttendeeID = 1,
-                            MeetingID = new Guid("e540ed06-761f-4d5f-9be8-a85d7a47220c")
+                            MeetingID = new Guid("6ef41f9d-e936-45c4-827e-abedbea8dbbc")
                         },
                         new
                         {
                             ID = 2,
                             AttendeeID = 2,
-                            MeetingID = new Guid("2ac44f20-d5a3-4689-8f04-70f692283c34")
+                            MeetingID = new Guid("7385d280-7ec8-4b66-9ac8-0dedc96c8658")
                         });
                 });
 #pragma warning restore 612, 618

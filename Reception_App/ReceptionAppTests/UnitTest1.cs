@@ -13,7 +13,7 @@ namespace ReceptionAppTests
             String p = person.ToString();
 
             Assert.Equal(
-                $"Name: Koel\nCompany: WTC\nRole: Student\nEmail: karend@student.wethinkcode.co.za\nContactNumber: 0849779380", p);
+                $"ID: 0\nName: Koel\nCompany: WTC\nRole: Student\nEmail: karend@student.wethinkcode.co.za\nContactNumber: 0849779380", p);
         }
     }
 }

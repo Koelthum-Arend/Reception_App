@@ -25,6 +25,8 @@ namespace Reception_App
             services.AddDbContextPool<AppDBContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("ReceptionAppDBConnection")));
 
+            services.AddScoped<VisitorRepository>();
+
             services.AddControllersWithViews();
 
             // In production, the Angular files will be served from this directory

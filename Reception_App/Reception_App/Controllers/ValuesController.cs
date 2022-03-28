@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Reception_App.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +13,21 @@ namespace Reception_App.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET: api/<ValuesController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly VisitorRepository _repo;
+
+        public ValuesController(VisitorRepository repo)
         {
-            return new string[] { "value1", "value2" };
+            this._repo = repo;
+        }
+        // GET: api/<ValuesController>
+        [HttpGet("visitors")]
+        public IEnumerable<Visitor> Get()
+        {
+            var visitors = _repo.GetAllVisitors();
+            Console.WriteLine(from vistor in visitors select vistor);
+
+            return visitors;
+            //return new string[] { "value1", "value2" };
         }
 
         // GET api/<ValuesController>/5

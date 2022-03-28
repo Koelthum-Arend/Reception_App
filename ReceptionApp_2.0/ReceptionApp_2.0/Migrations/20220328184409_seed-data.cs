@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Reception_App.Migrations
+namespace ReceptionApp_2._0.Migrations
 {
-    public partial class seedData : Migration
+    public partial class seeddata : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -87,8 +87,8 @@ namespace Reception_App.Migrations
                 columns: new[] { "MeetingID", "Date", "Description" },
                 values: new object[,]
                 {
-                    { new Guid("e540ed06-761f-4d5f-9be8-a85d7a47220c"), "2022-12-01", "Investment" },
-                    { new Guid("2ac44f20-d5a3-4689-8f04-70f692283c34"), "2022-12-02", "Visit" }
+                    { new Guid("6ef41f9d-e936-45c4-827e-abedbea8dbbc"), "2022-12-01", "Investment" },
+                    { new Guid("7385d280-7ec8-4b66-9ac8-0dedc96c8658"), "2022-12-02", "Visit" }
                 });
 
             migrationBuilder.InsertData(
@@ -108,9 +108,9 @@ namespace Reception_App.Migrations
                 columns: new[] { "ID", "AttendeeID", "MeetingID" },
                 values: new object[,]
                 {
-                    { 1, 1, new Guid("e540ed06-761f-4d5f-9be8-a85d7a47220c") },
-                    { 2, 2, new Guid("e540ed06-761f-4d5f-9be8-a85d7a47220c") },
-                    { 3, 1, new Guid("2ac44f20-d5a3-4689-8f04-70f692283c34") }
+                    { 1, 1, new Guid("6ef41f9d-e936-45c4-827e-abedbea8dbbc") },
+                    { 2, 2, new Guid("6ef41f9d-e936-45c4-827e-abedbea8dbbc") },
+                    { 3, 1, new Guid("7385d280-7ec8-4b66-9ac8-0dedc96c8658") }
                 });
 
             migrationBuilder.InsertData(
@@ -118,8 +118,8 @@ namespace Reception_App.Migrations
                 columns: new[] { "ID", "AttendeeID", "MeetingID" },
                 values: new object[,]
                 {
-                    { 1, 1, new Guid("e540ed06-761f-4d5f-9be8-a85d7a47220c") },
-                    { 2, 2, new Guid("2ac44f20-d5a3-4689-8f04-70f692283c34") }
+                    { 1, 1, new Guid("6ef41f9d-e936-45c4-827e-abedbea8dbbc") },
+                    { 2, 2, new Guid("7385d280-7ec8-4b66-9ac8-0dedc96c8658") }
                 });
 
             migrationBuilder.InsertData(
