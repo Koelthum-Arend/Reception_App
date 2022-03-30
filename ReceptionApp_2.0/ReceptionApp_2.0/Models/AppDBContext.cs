@@ -157,10 +157,5 @@ namespace Reception_App.Models
                }
             );
         }
-        //C:\Users\koelt\OneDrive\Documents\GitHub\Reception_App\Reception_App\Reception_App\Models\AppDBContext.cs
-
-
     }
-
-   
 }
